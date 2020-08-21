@@ -335,7 +335,7 @@ body {
     margin-top: 72px;
 }
 .project-image {
-    
+    border-radius: 5px 5px 5px 5px;
 }
 
 /* Адаптив */
