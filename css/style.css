@@ -45,6 +45,19 @@ body {
     margin-bottom: 105px;
 }
 
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .social-link {
     margin-left: 20px;
 }
@@ -178,21 +191,15 @@ body {
     align-items: flex-start;
 }
 
-.project-subtitle, .project-paragraph {
+.project-subtitle {
     margin: 0;
 }
 
-..project-subtitle {
+.project-subtitle {
     margin-bottom: 7px;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-}
-
-..project-paragraph {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
 }
 
 .project-icon {
