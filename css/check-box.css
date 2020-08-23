@@ -1,0 +1,29 @@
+
+body.dark {
+    background: #dbbbff;
+    transition: background 0.3s linear; /* Плавность */
+}
+
+.dark .textWebsite {
+    color: #000;
+}
+
+.dark .hero {
+    background: linear-gradient(0deg, #b992e6 0.01%, rgba(255, 53, 53, 0) 95.44%);
+}
+
+.dark .projects {
+    background: linear-gradient(180deg, #b992e6 0%, rgba(243, 48, 48, 0) 95.44%);
+}
+
+.dark .features {
+    background-color: #b992e6;
+}
+
+.dark .menu-header a,
+.dark .hero-subtitle {
+    color: #1e1060;
+}
+
+
+
