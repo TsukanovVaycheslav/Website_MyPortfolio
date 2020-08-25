@@ -1,0 +1,42 @@
+
+.container-more { 
+    max-width: 945px;
+    margin: auto;
+}
+
+.swiper-slide-more img {
+    width: 200px;
+    margin-left: 40px;
+}
+.swiper-slide-more img:hover {
+    width: 200px;
+    margin-top: -12px;
+    transition: 0.4s linear; /* Плавность */
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .container-more {
+        width: 960px;
+    }
+}
+
+@media (max-width: 997px) {
+    .container-more {
+        width: 760px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-more {
+        width: 560px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-more {
+        width: 90%;
+    }
+}

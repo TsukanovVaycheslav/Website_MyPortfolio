@@ -1,6 +1,15 @@
 
 new WOW().init();
 
+// Меняет фон страницы
+const chk = document.getElementById('check1');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+
+
 // Прокрутка "Последние проекты"
 var mySwiper = new Swiper('.swiper-container', {
     pagination: {
@@ -12,18 +21,15 @@ var mySwiper = new Swiper('.swiper-container', {
     autoplay: {
       delay: 7000,
     }
-  });
+});
 
-// Меняет фон страницы
-const chk = document.getElementById('check1');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
+// Прокрутка "Еще больше"
+var mySwiper = new Swiper('.swiper-container-more', {
+  
 });
 
 
-
-// Прокрутка страницы
+// Прокрутка страницы по якорям
 $(document).ready(function () {
 
 	$('a[href^="#"]').click(function () {

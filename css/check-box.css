@@ -25,5 +25,15 @@ body.dark {
     color: #1e1060;
 }
 
+.dark .projects-bullet {
+    border: 2px solid #0c47e9;
+}
+
+.dark .projects-bullet-active {
+    background-color: #7a55ff;
+}
 
 
+/* checkbox */
+
+/* /checkbox */

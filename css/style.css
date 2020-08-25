@@ -241,15 +241,18 @@ body {
 }
 
 .learnMore {
-    margin: 20px;
-    width: 70%;
+    margin-top: 5px;
     font-size: 15px;
     padding: 15px;
-    color: #fff;
-    background: rgb(58, 170, 108);
     border: none;
     cursor: pointer;
+    color: #fff;
+    background: rgb(58, 170, 108);
     border-radius: 5px 5px 5px 5px;
+}
+
+.learnMore-code {
+    background: rgb(247, 154, 33);
 }
 
 /* contacts */
@@ -356,6 +359,7 @@ body {
 }
 .project-image {
     border-radius: 5px 5px 5px 5px;
+    width: 390px;
 }
 
 /* Адаптив */
