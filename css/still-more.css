@@ -1,9 +1,12 @@
 
 .container-more { 
     max-width: 945px;
+    padding-top: 90px;
     margin: auto;
 }
-
+.swiper-slide-more p {
+    text-align: center;
+}
 .swiper-slide-more img {
     width: 200px;
     margin-left: 40px;
