@@ -25,7 +25,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
 // Прокрутка "Еще больше"
 var mySwiper = new Swiper('.swiper-container-more', {
-  
+  pagination: {
+    clickable: true,
+  }
 });
 
 

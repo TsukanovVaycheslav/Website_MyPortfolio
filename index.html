@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/still-more.css">
     <link rel="stylesheet" href="css/check-box.css">
+
+
+    <!-- Container (Contact Section) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Цуканов Вячеслав - Веб-разработчик</title> 
+    <title>Цуканов Вячеслав</title> 
 </head>
 <body>
   <header class="hero">
@@ -38,9 +48,10 @@
      <!-- /hero-header-->
     <div class="hero-content">
         <div class="hero-text">
-           <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Веб-разработчик</span>
+           <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Программист</span> <!-- Веб-разработчик -->
            <h1 class="textWebsite hero-title wow fadeInRight" data-wow-delay="0.4s">Цуканов Вячеслав</h1>
-           <p class="textWebsite hero-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+           <p class="textWebsite hero-description wow fadeInRight" data-wow-delay="0.6s">Я люблю создавать проекты, которые оказывают положительное влияние</p>
+                                                                                            <!-- Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина -->
             <a href="#buttom-consultation">
                 <button class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
             </a>
@@ -56,7 +67,66 @@
   <main>
       <section id="buttom-AboutUs" class="features section">
         <div class="container">
-            <h2 class="textWebsite section-title">Со мной удобно работать</h2>
+
+           <!-- Container (Contact Section) -->
+            <div id="contact">
+                <h3 class="text-center">Используемые технологии</h3>
+                <ul class="nav nav-tabs textWebsite-CS-menu">
+                <!-- Используются две ## - для переключения -->
+                <li class="active"><a data-toggle="tab" href="##landingPage">Landing page</a></li>
+                <li><a data-toggle="tab" href="##javaScript">Java Script</a></li>
+                <!-- 
+                    <li><a data-toggle="tab" href="##react">React</a></li>
+                    <li><a data-toggle="tab" href="##C-Sharp">C#</a></li>
+                 -->
+                </ul>
+            
+                <div class="tab-content">
+                    <div id="landingPage" class="tab-pane fade in active">
+                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+
+                        <ul class="textWebsite-CS">
+                            <li>опыт работы с HTML5, CSS3;</li>
+                            <li>опыт адаптивной верстки;</li>
+                            <li>опыт создания HTML-страницы сайта на основе дизайн-макетов;</li>
+                            <li>знание CSS-фреймворков;</li>
+                            <li>знание кросс-браузерной верстки;</li>
+                        </ul>
+                    </div>
+                    <div id="javaScript" class="tab-pane fade">
+                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                            
+                            <ul class="textWebsite-CS">
+                                <li>опыт работы с JS;</li>
+                                <li>знание JavaScript <!-- /JQuery -->;</li>
+                                <li>Переменные, условия, циклы, массивы, функции, модель DOM, обработка событий</li>
+                                <li>навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;</li>
+                            </ul>
+                    </div>
+                    <!-- 
+                    <div id="react" class="tab-pane fade">
+                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                            
+                            <ul class="textWebsite-CS">
+                                <li>React</li>
+                            </ul>
+                    </div>
+                    <div id="C-Sharp" class="tab-pane fade">
+                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                            
+                            <ul class="textWebsite-CS">
+                                <li>.NET / C#</li>
+                            </ul>
+                    </div>
+                     -->
+                    
+                </div>
+            </div>
+            <!-- /Container (Contact Section) -->
+
+
+            <!--
+                <h2 class="textWebsite section-title">Со мной удобно работать</h2>
             <div class="features-block">
                 <div class="features-item">
                     <img src="img/features/offer-img.svg" alt="" class="features-image">
@@ -89,6 +159,8 @@
                     <p class="textWebsite features-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
                 </div>
             </div>
+            -->
+            
         </div>
       </section>
 
@@ -118,7 +190,7 @@
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
                                     <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">17 рабочих дня</p>
+                                    <p class="textWebsite project-paragraph">3 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
@@ -175,6 +247,19 @@
                                         должны правильно ответить на ряд вопросов с несколькими вариантами ответов, 
                                         чтобы перейти на следующий уровень.
                                     </p>
+                                    <p class="textWebsite project-subtitle">Используемые методы:</p>
+                                    <div class="methods">
+                                            <ul class="textWebsite">
+                                                <li>setAttribute</li>
+                                                <li>getAttribute</li>
+                                                <li>addEventListener</li>
+                                            </ul>
+                                            <ul class="textWebsite">
+                                                <li>getAttribute</li>
+                                                <li>math.random.</li>
+                                                <li>createElement</li>
+                                            </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +333,9 @@
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
                                     <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">Американская компания, производитель космической техники "Space-X"</p>
+                                    <p class="textWebsite project-paragraph">
+                                        Сайт с шаблона
+                                    </p>
                                 </div>
                             </div>
                             
@@ -290,6 +377,24 @@
                                         а не специальные знания высокого уровня. Тем не менее некоторые головоломки стимулируют 
                                         теоретические и практические разработки учёных.
                                     </p>
+                                    <p class="textWebsite project-subtitle">Используемые методы:</p>
+                                    <div class="methods">
+                                            <ul class="textWebsite">
+                                                <li>setAttribute</li>
+                                                <li>getAttribute</li>
+                                                <li>addEventListener</li>
+                                            </ul>
+                                            <ul class="textWebsite">
+                                                <li>classList</li>
+                                                <li>forEach()</li>
+                                                <li>push()</li>
+                                            </ul>
+                                            <ul class="textWebsite">
+                                                <li>Class</li>
+                                                <li>constructor</li>
+                                                <li>setInterval()</li>
+                                            </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -345,56 +450,57 @@
         </div>
 
 
-        
-   <!-- <div class="container-more">
+ <!--       
+        <div class="container-more">
                 <h2 class="textWebsite section-title">Еще больше</h2>
 
                 <!-- Slider main container -->
-        <!--        <div class="swiper-container-more">
+  <!--              <div class="swiper-container-more">
                     <!-- Additional required wrapper -->
-         <!--          <div class="swiper-wrapper">
-                    <!-- Slides -->
-                     
-         <!--           <div class="swiper-slide-more">
-                        <a href="#">
-                            <img src="img/projects/else projects/landing-page.png" alt="else projects img">
-                        </a>
-                    </div>
-                
-                    <div class="swiper-slide-more">
-                        <a href="#">
-                            <img src="img/projects/else projects/С-Sharp-image.png" alt="else projects img">
-                        </a>
-                    </div>
+  <!--                  <div class="swiper-wrapper">
+                        
+                        <!-- Slides -->
+  <!--                      <div class="swiper-slide-more">
+                            <a href="#">
+                                <img src="img/projects/else projects/landing-page.png" alt="else projects img">
+                            </a>
+                        </div>
                     
-                     <div class="swiper-slide-more">
+                        <div class="swiper-slide-more">
+                            <a href="#">
+                                <img src="img/projects/else projects/С-Sharp-image.png" alt="else projects img">
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide-more">
+                            <a href="#">
+                                <img src="img/projects/else projects/js-image.png" alt="else projects img">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide-more">
                         <a href="#">
-                            <img src="img/projects/else projects/js-image.png" alt="else projects img">
+                            <img src="img/projects/else projects/react-image.png" alt="else projects img">
                         </a>
-                    </div>
-
-                    <div class="swiper-slide-more">
-                       <a href="#">
-                        <img src="img/projects/else projects/react-image.png" alt="else projects img">
-                       </a>
-                    </div>
+                        </div>
             
+                    </div> 
+                
+  -->
+                     <!-- If we need pagination 
+                    <div class="swiper-pagination"></div>
+                    -->
+                    <!-- If we need navigation buttons
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    -->
 
-                </div> --> 
-
-               <!-- If we need pagination 
-                <div class="swiper-pagination"></div>
-                -->
-                <!-- If we need navigation buttons
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                 -->
-
-                <!-- If we need scrollbar 
-                <div class="swiper-scrollbar"></div>
-            
-           </div> 
-        </div> -->
+                    <!-- If we need scrollbar 
+                    <div class="swiper-scrollbar"></div>
+                    
+                </div> 
+        </div>
+        -->
     </section>
   </main>
 
@@ -440,7 +546,7 @@
 
   <script src="js/wow.min.js"></script>
  
-  <!-- <script src="js/swiper.min.js" defer></script> -->
+  <!-- <script src="js/swiper.min.js" defer></script> container-more -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>

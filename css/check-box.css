@@ -32,6 +32,22 @@ body.dark {
     background-color: #7a55ff;
 }
 
+/* Container (Contact Section) */
+
+.dark .text-center,
+#contact ul li a {
+    color: #f7f7f7;
+    background: #b992e6;
+}
+.dark #contact ul li a {
+    color: #f7f7f7;
+    background: #b992e6;
+}
+.dark .text-center {
+    color: #000;
+}
+/* /Container (Contact Section) */
+
 
 /* checkbox */
 

@@ -3,11 +3,49 @@
 }
 
 body {
-    background-color: #20202D;
+    /* background-color: #20202D; */
+    background-color: #2C2D2E;
     margin: 0;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Container (Contact Section) */
+.text-center {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+}
+.text-center,
+#contact ul li a {
+    color: #f7f7f7;
+    background: #2C2D2E;
+    font-weight: bold;
+}
+#contact ul li a:hover {
+    color: #2C2D2E;
+    background: #fff;
+}
+
+.nav {
+    padding: 1px;
+}
+
+.tab-pane {
+    margin-top: 20px; 
+}
+
+.textWebsite-CS-menu {
+    font-size: 20px;
+}
+.textWebsite-CS {
+    font-size: 18px;
+}
+/* /Container (Contact Section) */
+
 
 .logo-avatar {
     width: 50px;
@@ -35,7 +73,8 @@ body {
 .hero {
     padding-top: 50px;
     padding-bottom: 155px;
-    background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+    /* background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%); */
+    background: linear-gradient(0deg, #2C2D2E 0.01%, rgba(0, 0, 0, 0) 95.44%);
 }
 
 .hero-header {
@@ -112,6 +151,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    color: #000;
 }
 
 .hero-avatar {
@@ -127,7 +167,8 @@ body {
 
 /* features */
 .features {
-    background-color: #000;
+    /* background-color: #000;2C2D2E */
+    background-color: #2C2D2E;
 }
 
 .features-block {
@@ -163,7 +204,8 @@ body {
 
 /* projects */
 .projects {
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+    /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%); */
+    background: linear-gradient(180deg, #2C2D2E 0%, rgba(0, 0, 0, 0) 95.44%);
 }
 
 .projects-slide {
@@ -201,8 +243,13 @@ body {
     margin: 0;
 }
 
+.methods {
+    display: flex;
+    justify-content: space-between;
+}
+
 .project-subtitle {
-    margin-bottom: 7px;
+    margin-top: 7px;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -347,6 +394,7 @@ body {
 }
 .contacts-link:hover {
     text-decoration: underline;
+    color: #fff;
 }
 
 .contacts-policy {
