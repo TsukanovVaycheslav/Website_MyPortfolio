@@ -239,9 +239,20 @@ body {
     align-items: flex-start;
 }
 
-.project-subtitle, .project-paragraph {
-    margin: 0;
+
+.projects-slide-menu p {
+    padding-left: 20px;
 }
+
+.logo-name-WebInfo {
+    background: #a058db;
+    padding: 7px;
+    width: 140px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 0px 0px 20px 0px;
+}
+
 
 .methods {
     display: flex;
