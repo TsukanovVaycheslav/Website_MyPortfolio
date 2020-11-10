@@ -421,6 +421,17 @@ body {
     width: 390px;
 }
 
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.footer-info-mini {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 /* Адаптив */
 @media(max-width: 1100px) {
     .hero-avatar {
