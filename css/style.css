@@ -298,7 +298,7 @@ body {
     background-color: #ffbb01;
 }
 
-.learnMore {
+.learnMore { 
     margin-top: 5px;
     font-size: 15px;
     padding: 15px;
@@ -423,13 +423,16 @@ body {
 
 .footer-info {
     display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
+    /* justify-content: space-around; */
+    float: right;
+    padding: 200px 50px 50px 0px;
 }
+
 .footer-info-mini {
     display: flex;
     justify-content: space-around;
 }
+
 
 
 /* Адаптив */
