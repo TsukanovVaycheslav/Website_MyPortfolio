@@ -29,15 +29,23 @@
     <div class="hero-header"> 
             <div class="menu-header">
                 <img src="img/avatar.jpg" alt="logo" class="logo-avatar">
-                <a href="#buttom-Projects">Проекты</a>
-                <a href="#buttom-AboutUs">О нас</a>
+                <a id="projects" href="#buttom-Projects">Проекты</a>
+                <a id="about" href="#buttom-AboutUs">О нас</a>
             </div>
             
             <div class="textWebsite-header social-links">
-                <a href="https://github.com/TsukanovVaycheslav" class="social-link" target="_blank"><img src="img/social/github.svg" alt="github"></a>
-                <!-- <a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
-                <a href="#" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a> -->
-                <a href="https://www.facebook.com/vtsukanoff/" class="social-link" target="_blank"><img src="img/social/facebook.svg" alt="fb"></a>
+                <div>
+                    <a href="https://github.com/TsukanovVaycheslav" class="social-link" target="_blank"><img src="img/social/github.svg" alt="github"></a>
+                    <!-- <a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a> -->
+                    <a href="https://www.facebook.com/vtsukanoff/" class="social-link" target="_blank"><img src="img/social/facebook.svg" alt="fb"></a>
+                </div>
+
+                <div class="lenguage">
+                    <button onclick="change1()">Английский</button>
+                    <button onclick="change2()">Русский</button>
+                </div>
+                
             </div>
     </div>
 
@@ -49,9 +57,9 @@
      <!-- /hero-header-->
     <div class="hero-content">
         <div class="hero-text">
-           <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">Программист</span> <!-- Веб-разработчик -->
-           <h1 class="textWebsite hero-title wow fadeInRight" data-wow-delay="0.4s">Цуканов Вячеслав</h1>
-           <p class="textWebsite hero-description wow fadeInRight" data-wow-delay="0.6s">Я люблю создавать проекты, которые оказывают положительное влияние</p>
+           <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s" id="specialty">Программист</span> <!-- Веб-разработчик -->
+           <h1 class="textWebsite hero-title wow fadeInRight" data-wow-delay="0.4s" id="firstName">Цуканов Вячеслав</h1>
+           <p class="textWebsite hero-description wow fadeInRight" data-wow-delay="0.6s" id="description">Я люблю создавать проекты, которые оказывают положительное влияние</p>
                                                                                             <!-- Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина -->
             <!-- <a href="#buttom-consultation">
                 <button class="button hero-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
@@ -71,7 +79,7 @@
 
            <!-- Container (Contact Section) -->
             <div id="contact">
-                <h3 class="text-center">Используемые технологии</h3>
+                <h3 class="text-center" id="useTechnology">Используемые технологии</h3>
                 <ul class="nav nav-tabs textWebsite-CS-menu">
                 <!-- Используются две ## - для переключения -->
                     
@@ -86,40 +94,39 @@
             
                 <div class="tab-content">
                     <div id="landingPage" class="tab-pane fade in active">
-                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                        <p class="textWebsite-CS-menu" id="TechnologiesUsedHTML">Профессиональные навыки:</p>
 
                         <ul class="textWebsite-CS">
-                            <li>опыт работы с HTML5, CSS3;</li>
-                            <li>опыт адаптивной верстки;</li>
-                            <li>опыт создания HTML-страницы сайта на основе дизайн-макетов;</li>
-                            <li>знание CSS-фреймворков;</li>
-                            <li>знание кросс-браузерной верстки;</li>
+                            <li id="htmlExperience">опыт работы с HTML5, CSS3;</li>
+                            <li id="htmlExperienceAdaptive">опыт адаптивной верстки;</li>
+                            <li id="htmlExperienceCreating">опыт создания HTML-страницы сайта на основе дизайн-макетов;</li>
+                            <li id="htmlKnowledgeCSSFrameworks">знание CSS-фреймворков;</li>
+                             <li id="htmlKnowledgeCrossBrowser">знание кросс-браузерной верстки;</li>
                         </ul>
                     </div>
                     <div id="javaScript" class="tab-pane fade">
-                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                        <p class="textWebsite-CS-menu" id="TechnologiesUsedJS">Профессиональные навыки:</p>
                             
                             <ul class="textWebsite-CS">
 
-                                <li>Типы данных, операторы, методы и свойства;</li>
-                                <li>Динамическая типизация данных в Javascript. Условия, ветвления;</li>
-                                <li>Переменные, условия, циклы, массивы, функции, модель DOM, обработка событий. циклы. рекурсия;</li>
-                                <li>навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;</li>
-                                <li>Функции. Область видимости и замыкание;</li>
-                                <li>Работа с DOM, работа с элементами DOM;</li>
-                                <li>События в JS, обработчики событий и особенности их работы, 
-                                    события мыши и клавиатуры;</li>
-                                <li>Контекст вызова - this;</li>
-                                <li>Скрипты и время выполнения. setTimeout, setInterval и requestAnimationFrame. Объект Date;​</li>
-                                <li>Параметры документа, окна и работа с ними;</li>
-                                <li>ООП - Наследование, прототипы, конструкторы и классы;</li>
-                                <li>try..catch - перехват ошибок; SimpleHttpServer и import / export; <br>
-                                    коллекции Map / Set; assign; isEqual; localStorage; async / await;
-                                </li>
+                                <li id="DataTypes">Типы данных, операторы, методы и свойства;</li>
+                                <li id="DynamicData">Динамическая типизация данных в Javascript. Условия, ветвления;</li>
+                                <li id="VariablesConditions">Переменные, условия, циклы, массивы, функции, модель DOM, обработка событий. циклы. рекурсия;</li>
+                                <li id="SkillsForLinking">Навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;</li>
+                                <li id="Functions">Функции. Область видимости и замыкание;</li>
+                                <li id="WorkingWithDOM">Работа с DOM, работа с элементами DOM;</li>
+                                <li id="EventsInJS">События в JS, обработчики событий и особенности их работы, события мыши и клавиатуры;</li>
+                                <li id="contextOfTheCall">Контекст вызова - this;</li>
+                                <li id="ScriptsAndRuntime">Скрипты и время выполнения. setTimeout, setInterval и requestAnimationFrame. Объект Date;​</li>
+                                <li id="DocumentParameters">Параметры документа, окна и работа с ними;</li>
+                                <li id="OOP-Inheritance">ООП - Наследование, прототипы, конструкторы и классы;</li>
+                                <li id="tryCatch">try..catch - перехват ошибок; SimpleHttpServer и import / export;</li>
+                                <li id="collections">коллекции Map / Set; assign; isEqual; localStorage; async / await;</li>
+                               
 
                             </ul>
 
-                        <p class="textWebsite-CS-menu">
+                        <p class="textWebsite-CS-menu" id="textWebsiteJS">
                             Освоил ООП, Написанный и полностью готовый таймер для сайта на JS. 
                             Могу манипулировать содержимым страницы браузера, 
                             писать анимации, понимаю что такое <b>"this"</b>; <br>
@@ -143,27 +150,27 @@
                             
                     </div> -->
                     <div id="C-Sharp" class="tab-pane fade">
-                        <p class="textWebsite-CS-menu">Профессиональные навыки:</p>
+                        <p class="textWebsite-CS-menu" id="TechnologiesUsedSharp">Профессиональные навыки:</p>
 
                         <b class="textWebsite-CS">.NET / C#</b>
                             <ul class="textWebsite-CS">
-                                <li>создание веб-приложений и веб-сервисов;</li>
-                                <li>создание настольных приложений;</li>
-                                <li>создание облачных сервисов;</li>
-                                <li>создание игр;</li>
-                                <li>создание мобильных приложений;</li>
+                                <li id="creatingWeb">создание веб-приложений и веб-сервисов;</li>
+                                <li id="creatingDesktop">создание настольных приложений;</li>
+                                <li id="creatingServices">создание облачных сервисов;</li>
+                                <li id="gameDevelopment">создание игр;</li>
+                                <li id="creationOfMobileApplications">создание мобильных приложений;</li>
                             </ul>
 
                         <b class="textWebsite-CS">ООП</b>
                             <ul class="textWebsite-CS">
-                                <li>Алгоритмы и структуры данных;</li>
-                                <li>Паттерны проектирования (Шаблоны);</li>
-                                <li>Делегаты и события;</li>
-                                <li>Указатели;</li>
-                                <li>Обработка исключений (try-catch и блок finally);</li>
-                                <li>Асинхронность (async, await);</li>
-                                <li>Многопоточное программирование (thread);</li>
-                                <li>SQL - декларативный язык структурированных запросов;</li>
+                                <li id="Algorithms">Алгоритмы и структуры данных;</li>
+                                <li id="Design">Паттерны проектирования (Шаблоны);</li>
+                                <li id="Delegates&Events">Делегаты и события;</li>
+                                <li id="Pointers">Указатели;</li>
+                                <li id="ExceptionHandling">Обработка исключений (try-catch и блок finally);</li>
+                                <li id="Asynchrony">Асинхронность (async, await);</li>
+                                <li id="MultithreadedProgramming">Многопоточное программирование (thread);</li>
+                                <li id="SQLLanguage">SQL - декларативный язык структурированных запросов;</li>
                             </ul>
 
                         <b class="textWebsite-CS">Framework</b>
@@ -172,7 +179,7 @@
                                 <li>ASP.NET MVC;</li>
                                 <li>ASP.NET Core;</li>
                                 <li>Entity Framework 6;</li>
-                                <li>LINQ - Language Integrated Query (язык интегрированных запросов);</li>
+                                <li id="SharpLINQ">LINQ - Language Integrated Query (язык интегрированных запросов);</li>
                             </ul>
                     </div>
 
@@ -289,7 +296,7 @@
 
       <section id="buttom-Projects" class="section projects">
         <div class="container">
-            <h2 class="textWebsite section-title">Последние проекты</h2>
+            <h2 class="textWebsite section-title" id="latestProject">Последние проекты</h2> <!-- Pet-project -->>
 
             <!-- Slider main container -->
             <div class="swiper-container projects-slider">
@@ -302,26 +309,26 @@
                             <img src="img/projects/websites-proj/organization-of-conferences.png" alt="" class="project-image">
                            
                                 <a href="https://tsukanovvaycheslav.github.io/Website-organization-of-conferences/" target="_blank">
-                                    <button class="learnMore">Подробнее</button>
+                                    <button id="more1" class="learnMore">Подробнее</button>
                                 </a>
                                 <a href="https://github.com/TsukanovVaycheslav/-Website-organization-of-conferences.git" target="_blank">
                                     <button class="learnMore learnMore-code">Code</button>
                                 </a>
-                               
-                            <p class="logo-name-WebInfo wow jackInTheBox" data-wow-delay="0.2s">Сайт с шаблона</p>
+                            
+                            <p id="websiteWithATemplate1" class="logo-name-WebInfo wow jackInTheBox" data-wow-delay="0.2s">Сайт с шаблона</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Сайт - Организация конференций</h3>
+                            <h3 id="descriptionName1" class="textWebsite project-title">Сайт - Организация конференций</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">5 рабочих дня</p>
+                                    <h4 id="deadlines1" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays1" class="textWebsite project-paragraph">5 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity1" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     4.5
                                 </div>
@@ -329,8 +336,8 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description1" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj1" class="textWebsite project-paragraph">
                                         Организация конференций
                                     </p>
                                 </div>
@@ -343,26 +350,26 @@
                             <img src="img/projects/websites-proj/couch-Store.png" alt="" class="project-image">
                            
                                 <a href="https://tsukanovvaycheslav.github.io/Website-couch-Store/" target="_blank">
-                                    <button class="learnMore">Подробнее</button>
+                                    <button id="more2" class="learnMore">Подробнее</button>
                                 </a>
                                 <a href="https://github.com/TsukanovVaycheslav/Website-couch-Store.git" target="_blank">
                                     <button class="learnMore learnMore-code">Code</button>
                                 </a>
                                
-                            <p class="logo-name-WebInfo">Сайт с шаблона</p>
+                            <p id="websiteWithATemplate2" class="logo-name-WebInfo">Сайт с шаблона</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Магазин кушеток</h3>
+                            <h3 id="descriptionName2" class="textWebsite project-title">Сайт - Магазин кушеток</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">3 рабочих дня</p>
+                                    <h4 id="deadlines2" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays2" class="textWebsite project-paragraph">3 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity2" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     4.0
                                 </div>
@@ -370,8 +377,8 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description2" id="description2" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj2" class="textWebsite project-paragraph">
                                         Большой выбор кушеток
                                     </p>
                                 </div>
@@ -383,25 +390,25 @@
                         <div>
                             <img src="img/projects/websites-proj/1001-Questions-Game.png" alt="" class="project-image">
                             <a href="https://tsukanovvaycheslav.github.io/1001-Questions-Game/" target="_blank">
-                                <button class="learnMore">Подробнее</button>
+                                <button id="more3" class="learnMore">Подробнее</button>
                             </a>
                             <a href="https://github.com/TsukanovVaycheslav/1001-Questions-Game.git" target="_blank">
                                 <button class="learnMore learnMore-code">Code</button>
                             </a>
-                            <p class="logo-name-WebInfo">Игра</p>
+                            <p id="game3" class="logo-name-WebInfo">Игра</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Game - 1001 Questions Game</h3>
+                            <h3 id="descriptionName3" class="textWebsite project-title">Игра - 1001 вопрос</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">15 рабочих дня</p>
+                                    <h4 id="deadlines3" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays3" class="textWebsite project-paragraph">15 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity3" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     5.0
                                 </div>
@@ -409,13 +416,13 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description3" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj3" class="textWebsite project-paragraph">
                                         Игра "1001 Questions Game" - это конкурс викторина, в котором участники 
                                         должны правильно ответить на ряд вопросов с несколькими вариантами ответов, 
                                         чтобы перейти на следующий уровень.
                                     </p>
-                                    <p class="textWebsite project-subtitle">Используемые методы:</p>
+                                    <p id="theMethodsUsed3" class="textWebsite project-subtitle">Используемые методы:</p>
                                     <div class="methods">
                                             <ul class="textWebsite">
                                                 <li>setAttribute</li>
@@ -437,26 +444,26 @@
                         <div>
                             <img src="img/projects/websites-proj/Epa green.png" alt="" class="project-image">
                             <a href="https://tsukanovvaycheslav.github.io/Website_Epa-green/" target="_blank">
-                                <button class="learnMore">Подробнее</button>
+                                <button id="more4" class="learnMore">Подробнее</button>
                             </a>
                             <a href="https://github.com/TsukanovVaycheslav/Website_Epa-green.git" target="_blank">
                                 <button class="learnMore learnMore-code">Code</button>
                             </a>
                             
-                            <p class="logo-name-WebInfo">Сайт с шаблона</p>
+                            <p id="websiteWithATemplate4" class="logo-name-WebInfo">Сайт с шаблона</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Сайт - Epa green</h3>
+                            <h3 id="descriptionName4" class="textWebsite project-title">Сайт - Epa green</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">3 рабочих дня</p>
+                                    <h4 id="deadlines4" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays4" class="textWebsite project-paragraph">3 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity4" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     3.5
                                 </div>
@@ -464,8 +471,8 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description4" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj4" class="textWebsite project-paragraph">
                                         Сайт с шаблона
                                     </p>
                                 </div>
@@ -477,25 +484,25 @@
                         <div>
                             <img src="img/projects/websites-proj/Website_Space-X.png" alt="" class="project-image">
                             <a href="https://tsukanovvaycheslav.github.io/Website_Space-X/" target="_blank">
-                                <button class="learnMore">Подробнее</button>
+                                <button id="more5" class="learnMore">Подробнее</button>
                             </a>
                             <a href="https://github.com/TsukanovVaycheslav/Website_Space-X.git" target="_blank">
                                 <button class="learnMore learnMore-code">Code</button>
                             </a>
-                            <p class="logo-name-WebInfo">Сайт с шаблона</p>
+                            <p id="websiteWithATemplate5" class="logo-name-WebInfo">Сайт с шаблона</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Сайт - "Space-X"</h3>
+                            <h3 id="descriptionName5" class="textWebsite project-title">Сайт - "Space-X"</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">4 рабочих дня</p>
+                                    <h4 id="deadlines5" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays5" class="textWebsite project-paragraph">4 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity5" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     4.7
                                 </div>
@@ -503,8 +510,8 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description5" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj5" class="textWebsite project-paragraph">
                                         Сайт с шаблона
                                     </p>
                                 </div>
@@ -517,25 +524,25 @@
                         <div>
                             <img src="img/projects/websites-proj/Cards-Three-in-one.png" alt="" class="project-image">
                             <a href="https://tsukanovvaycheslav.github.io/Cards-Three-in-one/ " target="_blank">
-                                <button class="learnMore">Подробнее</button>
+                                <button id="more6" class="learnMore">Подробнее</button>
                             </a>
                             <a href="https://github.com/TsukanovVaycheslav/Cards-Three-in-one.git" target="_blank">
                                 <button class="learnMore learnMore-code">Code</button>
                             </a>
-                            <p class="logo-name-WebInfo">Игра</p>
+                            <p id="game6" class="logo-name-WebInfo">Игра</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Game - Cards Three in one</h3>
+                            <h3 id="descriptionName6" class="textWebsite project-title">Игра - Карты три в одном</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">9 рабочих дня</p>
+                                    <h4 id="deadlines6" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays6" class="textWebsite project-paragraph">9 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity6" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     5.0
                                 </div>
@@ -543,13 +550,13 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description6" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj6" class="textWebsite project-paragraph">
                                         Головоломка — непростая задача, для решения которой, как правило, требуется сообразительность, 
                                         а не специальные знания высокого уровня. Тем не менее некоторые головоломки стимулируют 
                                         теоретические и практические разработки учёных.
                                     </p>
-                                    <p class="textWebsite project-subtitle">Используемые методы:</p>
+                                    <p id="theMethodsUsed6" class="textWebsite project-subtitle">Используемые методы:</p>
                                     <div class="methods">
                                             <ul class="textWebsite">
                                                 <li>setAttribute</li>
@@ -576,25 +583,25 @@
                         <div>
                             <img src="img/projects/websites-proj/Delivery Food.png" alt="" class="project-image">
                             <a href="https://tsukanovvaycheslav.github.io/Delivery-Food/" target="_blank">
-                                <button class="learnMore">Подробнее</button>
+                                <button id="more7" class="learnMore">Подробнее</button>
                             </a>
                             <a href="https://github.com/TsukanovVaycheslav/Delivery-Food.git" target="_blank">
                                 <button class="learnMore learnMore-code">Code</button>
                             </a>
-                            <p class="logo-name-WebInfo">Сайт с шаблона</p>
+                            <p id="websiteWithATemplate7" class="logo-name-WebInfo">Сайт с шаблона</p>
                         </div>
                         <div class="project-text">
-                            <h3 class="textWebsite project-title">Сайт - Всегда вкусное и разнообразное меню на любой вкус и достаток</h3>
+                            <h3 id="descriptionName7" class="textWebsite project-title">Сайт - Всегда вкусное и разнообразное меню на любой вкус и достаток</h3>
                             <div class="project-time">
                                 <img src="img/time-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Сроки</h4>
-                                    <p class="textWebsite project-paragraph">5 рабочих дня</p>
+                                    <h4 id="deadlines7" class="textWebsite project-subtitle">Сроки</h4>
+                                    <p id="workingDays7" class="textWebsite project-paragraph">5 рабочих дня</p>
                                 </div>
                             </div>
                             <div class="project-cost">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Cложность</h4>
+                                    <h4 id="complexity7" class="textWebsite project-subtitle">Cложность</h4>
                                     <img src="img/rating.svg" alt="rating" class="rating-star">
                                     4.5
                                 </div>
@@ -602,8 +609,8 @@
                             <div class="project-feedback">
                                 <img src="img/feedback-icon.svg" alt="Срок" class="project-icon">
                                 <div class="project-descripton">
-                                    <h4 class="textWebsite project-subtitle">Описание</h4>
-                                    <p class="textWebsite project-paragraph">
+                                    <h4 id="description7" class="textWebsite project-subtitle">Описание</h4>
+                                    <p id="description1Proj7" class="textWebsite project-paragraph">
                                         Хотя я хотел перепроектировать это приложение для своего личного использования, 
                                         есть и другие типы пользователей, о которых я должен был знать при создании универсального 
                                         дизайна. Через интервью я понял, с какими болевыми точками сталкиваются люди, которые обычно 
@@ -635,14 +642,14 @@
 
             <section class="footer-info">
                 <div class="w">
-                    <h4 class="textWebsite contacts-title">Cвязь</h4>
+                    <h4 class="textWebsite contacts-title" id="Communication">Cвязь</h4>
                     <!-- <a href="tel:+7..." class="textWebsite contacts-link">Телефон</a> -->
                     <a href="mailti:mail@mail.ru" class="contacts-link">
                         <i class="far fa-envelope"></i> vtsukanoff@yandex.ru</a>
                 </div>
             
                 <div class="w">
-                    <h4 class="textWebsite contacts-title">Соцсети</h4>
+                    <h4 class="textWebsite contacts-title" id="SocialNetwork">Соцсети</h4>
                     <a href="https://github.com/TsukanovVaycheslav" class="" target="_blank"><img src="img/social/github.svg" alt="github"></a>
                     <!-- <a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
                     <a href="#" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a> -->
@@ -696,6 +703,7 @@
   <!-- <script src="js/swiper.min.js" defer></script> container-more -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/languageSelection.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
